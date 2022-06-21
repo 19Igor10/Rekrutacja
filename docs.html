@@ -19,13 +19,22 @@
   <link rel="stylesheet" href="https://mdbgo.io/mikolaj-smolenski/mdb5-demo-pro/dev/css/new-prism.css" />
   <!-- Custom styles -->
   <style>
+    body {
+      position: relative;
+      padding-top: 0;
+    }
     main {
       padding-left: 240px;
     }
   </style>
 </head>
 
-<body>
+<body
+  data-mdb-spy="scroll"
+  data-mdb-target="#scrollspy1"
+  data-mdb-offset="1"
+  class="scrollspy-example"
+>
   <!-- YOUR WORK HERE -->
   <main>
     <div class="container my-5">
@@ -37,18 +46,16 @@
             <!--Section: Introduction-->
             <section id="section-introduction">
               <!-- Main title -->
-              <h2 class="h1 fw-bold">[Page title]</h2>
+              <h2 class="h1 fw-bold">Cards</h2>
 
               <!-- Seo title -->
-              <h1 class="h6">[Page seo title]</h1>
+              <h1 class="h6">Bootstrap 5 Card component</h1>
 
               <div class="row">
-                <div class="col-md-7 mb-4">
                   <!-- Description -->
-                  <p class="my-4">
-                    [Page description]
+                  <p class="my-3">
+                    Responsive cards built with the latest Bootstrap 5. Card is a responsive content container with an extensible option for headers, footers, images, and a wide variety of content.
                   </p>
-                </div>
               </div>
             </section>
             <!--Section: Introduction-->
@@ -62,42 +69,40 @@
 
               <!--Description-->
               <p>
-                [Section description]
+                Use the following simple card component with a title and a description:
               </p>
 
               <!-- Section: Demo -->
-              <!-- Here place the demo for the user -->
-              <section class="border p-4 text-center mb-4">
+              <section class="border p-4 text-center mb-4 d-flex justify-content-center" >
 
-                <p>I am just an example paragraph. Remove me.</p>
+                  <div class="card" style="max-width: 20rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-primary">Button</button>
+                    </div>
+                  </div>
+
               </section>
               <!-- Section: Demo -->
 
               <!-- Section: Code -->
-              <!-- Here place the code for the user -->
-              <section class="">
+              <section class="my-3">
 
                 <mdbsnippet>
                   <!-- HTML -->
                   <code data-lang="html" data-name="HTML">
 
-                    <p>I am just an example paragraph. Remove me.</p>
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-primary">Button</button>
+                      </div>
+                    </div>
 
                   </code>
-                  <!-- CSS -->
-                  <code data-lang="css" data-name="CSS">
-
-                    .test {
-                      color: red
-                    }
-
-                  </code>
-                  <!-- JavaScript -->
-                  <code data-lang="JavaScript" data-name="JAVASCRIPT">
-
-                    let test = "test"
-
-                  </code>
+                  
                 </mdbsnippet>
 
               </section>
@@ -105,6 +110,256 @@
 
             </section>
             <!--Section: Basic example-->
+
+             <!--Section: Image example-->
+             <section id="section-image-example">
+              <!-- Section title -->
+              <h2 class="my-5 mb-4">Image</h2>
+
+              <!--Description-->
+              <p>
+                Use the following example of a card element with an image for blog posts, user cards, and many more:
+              </p>
+
+              <!-- Section: Demo -->
+              <section class="border p-4 text-center mb-4 d-flex justify-content-center" >
+
+                <div class="card" style="max-width: 22rem">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+
+              </section>
+              <!-- Section: Demo -->
+
+              <!-- Section: Code -->
+              <section class="my-3">
+
+                <mdbsnippet>
+                  <!-- HTML -->
+                  <code data-lang="html" data-name="HTML">
+
+                    <div class="card">
+                      <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#!" class="btn btn-primary">Button</a>
+                      </div>
+                    </div>
+
+                  </code>
+                  
+                </mdbsnippet>
+
+              </section>
+              <!-- Section: Code -->
+
+            </section>
+            <!--Section: Image example-->
+
+            <!--Section: Image-with-ripple example-->
+            <section id="section-image-with-ripple-example">
+              <!-- Section title -->
+              <h2 class="my-5 mb-4">Image with ripple</h2>
+
+              <!--Description-->
+              <p>
+                To add a <a href="https://mdbootstrap.com/docs/standard/methods/ripple/">ripple effect</a> and subtle <a href="https://mdbootstrap.com/docs/standard/content-styles/hover-effects/">hover effect</a> you need to modify the HTML markup of the card image.
+              </p>
+
+              <!-- Section: Demo -->
+              <section class="border p-4 text-center mb-4 d-flex justify-content-center" >
+
+                <div class="card" style="max-width: 22rem">
+                  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+
+              </section>
+              <!-- Section: Demo -->
+
+              <!-- Section: Code -->
+              <section class="my-3">
+
+                <mdbsnippet>
+                  <!-- HTML -->
+                  <code data-lang="html" data-name="HTML">
+
+                    <div class="card">
+                      <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+                        <a href="#!">
+                          <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#!" class="btn btn-primary">Button</a>
+                      </div>
+                    </div>
+
+                  </code>
+                  
+                </mdbsnippet>
+
+              </section>
+              <!-- Section: Code -->
+
+            </section>
+            <!--Section: Image-with-ripple example-->
+
+            <!--Section: header-and-footer example-->
+            <section id="section-header-and-footer-example">
+              <!-- Section title -->
+              <h2 class="my-5 mb-4">Header and footer</h2>
+
+              <!--Description-->
+              <p>
+                Add optional header and footer sections to the card.
+              </p>
+
+              <!-- Section: Demo -->
+              <section class="border p-4 text-center mb-4 d-flex justify-content-center" >
+
+                <div class="card text-center" style="max-width: 20rem">
+                  <div class="card-header">Featured</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Button</a>
+                  </div>
+                  <div class="card-footer text-muted">2 days ago</div>
+                </div>
+
+              </section>
+              <!-- Section: Demo -->
+
+              <!-- Section: Code -->
+              <section class="">
+
+                <mdbsnippet>
+                  <!-- HTML -->
+                  <code data-lang="html" data-name="HTML">
+
+                    <div class="card text-center">
+                      <div class="card-header">Featured</div>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                      </div>
+                      <div class="card-footer text-muted">2 days ago</div>
+                    </div>
+
+                  </code>
+                  
+                </mdbsnippet>
+
+                <p class="note note-light my-3">
+                  <strong>Note primary:</strong> Some examples here have fixed card width. Cards have no fixed width to start, so they’ll naturally fill the full width of its parent element. To control the width of the card place it in the grid, use the sizing utilities, or set the width inline. You can learn more in the <a href="https://mdbootstrap.com/docs/standard/components/cards/#section-sizing">sizing section</a>.
+                </p>
+
+              </section>
+              <!-- Section: Code -->
+
+            </section>
+            <!--Section: header-and-footer example-->
+
+             <!--Section: horizontal example-->
+             <section id="section-horizontal-example">
+              <!-- Section title -->
+              <h2 class="my-5 mb-4">Horizontal</h2>
+
+              <!--Description-->
+              <p>
+                Using a combination of grid and utility classes, cards can be made horizontal in a mobile-friendly and responsive way. In the example below, we remove the grid gutters with <code>.g-0</code> and use <code>.col-md-*</code> classes to make the card horizontal at the <code>md</code> breakpoint. Further adjustments may be needed depending on your card content.
+              </p>
+
+              <!-- Section: Demo -->
+              <section class="border p-4 text-center mb-4 d-flex justify-content-center" >
+
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.webp"
+                        alt="Trendy Pants and Shoes"
+                        class="img-fluid rounded-start"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a natural lead-in to
+                          additional content. This content is a little bit longer.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted">Last updated 3 mins ago</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </section>
+              <!-- Section: Demo -->
+
+              <!-- Section: Code -->
+              <section class="my-3">
+
+                <mdbsnippet>
+                  <!-- HTML -->
+                  <code data-lang="html" data-name="HTML">
+
+                    <div class="card mb-3" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.webp"
+                            alt="Trendy Pants and Shoes"
+                            class="img-fluid rounded-start"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              This is a wider card with supporting text below as a natural lead-in to
+                              additional content. This content is a little bit longer.
+                            </p>
+                            <p class="card-text">
+                              <small class="text-muted">Last updated 3 mins ago</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </code>
+                  
+                </mdbsnippet>
+
+              </section>
+              <!-- Section: Code -->
+
+            </section>
+            <!--Section: horizontal example-->
 
           </section>
           <!--Section: Docs content-->
@@ -118,11 +373,11 @@
             .scrollspy-example {
               position: relative;
               height: 200px;
-              overflow: auto;
+              overflow-y: auto;
             }
           </style>
           <!-- Scrollspy -->
-          <div id="scrollspy1" class="sticky-top">
+          <div id="scrollspy1" class="sticky-top" style="top: 30px" >
             <ul class="nav flex-column nav-pills menu-sidebar">
               <!-- Link -->
               <li class="nav-item">
@@ -132,7 +387,16 @@
                 <a class="nav-link" href="#section-basic-example">Basic example</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#section-x">Variation #x</a>
+                <a class="nav-link" href="#section-image-example">Image</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-image-with-ripple-example">Image with ripple</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-header-and-footer-example">Header and footer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-horizontal-example">Horizontal</a>
               </li>
 
               <!-- Link -->
